@@ -1,0 +1,63 @@
+{
+  "name": "moo-angular-starter",
+  "version": "1.0.0",
+  "description": "An Application Shell for generating Angular Applications for Mutual of Omaha",
+  "main": "app.js",
+  "scripts": {
+    "dev": "export NODE_ENV=development && webpack-dev-server --devtool eval --progress --colors --port=9000 --hot --content-base app",
+    "test": "export NODE_ENV=test && karma start",
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp app/app.html dist/index.app"
+  },
+  "keywords": [
+    "angular",
+    "webpack",
+    "es6"
+  ],
+  "author": "Sean Larkin",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.4.7",
+    "chai": "^3.3.0",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.0.0",
+    "karma": "^0.13.10",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-ng-html2js-preprocessor": "^0.2.0",
+    "karma-verbose-reporter": "0.0.3",
+    "karma-webpack": "^1.7.0",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.3",
+    "ng-loader": "^1.0.0",
+    "ngrequire-webpack-plugin": "^2.0.23",
+    "raw-loader": "^0.5.1",
+    "run-sequence": "^1.1.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0",
+    "yargs": "^3.9.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-animate": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "html-loader": "^0.3.0",
+    "jscs": "^2.3.5",
+    "jscs-loader": "^0.2.0",
+    "karma-chai": "^0.1.0",
+    "ng-annotate-loader": "0.0.10",
+    "ngrequire-webpack-plugin": "^2.0.23",
+    "node-bourbon": "^4.2.3",
+    "node-sass": "^3.3.3",
+    "sass-loader": "^3.0.0",
+    "scss-loader": "0.0.1",
+    "style-loader": "^0.12.4"
+  }
+}
