@@ -1,13 +1,21 @@
 # angular-starter-es6-webpack
 This is an Angular Starter App with component and service generators using gulp for easy component development. Uses Karma-Mocha-Chai as test sweet and Babel Loader and Webpack for ES6
 
-## Instructions for Use
+## Instructions for Installation
 1. Fork and Clone Repository.
 2. Open terminal and `cd` to path of the repo.
 3. Install any node modules: `npm install`
 4. Install gulp: `npm install gulp -g`
-5. Run the App: `npm run dev`
-6. Go to localhost:9000
+
+## Running the Enviornments
+### Development
+` npm run dev `
+
+### Test (Karma-Mocha-Chai)
+` npm run test `
+
+### Production
+` npm run dev `
 
 
 ## Generators
