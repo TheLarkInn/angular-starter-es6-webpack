@@ -15,7 +15,7 @@ This is an Angular Starter App with component and service generators using gulp 
 ` npm run test `
 
 ### Production
-` npm run dev `
+` npm run build `
 
 
 ## Generators
