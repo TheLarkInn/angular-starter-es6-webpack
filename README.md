@@ -1,4 +1,5 @@
-# angular-starter-es6-webpack
+# angular-starter-es6-webpack 
+[![Join the chat at https://gitter.im/angularclass/NG6-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/thelarkinn/angular-starter-es6-webpack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This is an Angular Starter App with component and service generators using gulp for easy component development. Uses Karma-Mocha-Chai as test sweet and Babel Loader and Webpack for ES6
 
 ## Instructions for Installation
