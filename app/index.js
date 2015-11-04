@@ -3,7 +3,7 @@ import angular from 'angular';
 import angularUIRouter from 'angular-ui-router';
 import appComponents from './components/components.js';
 import commonComponents from './common/components.js';
-import appServices from './services/services';
+import appServices from './services/services.js';
 import appConfiguration from './app.config';
 
 // Single Style Entry Point

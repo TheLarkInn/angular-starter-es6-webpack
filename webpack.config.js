@@ -1,5 +1,4 @@
 var webpack = require('webpack');
-var ngRequirePlugin = require('ngrequire-webpack-plugin');
 var nodeEnvironment = process.env.NODE_ENV
 var bourbon = require('node-bourbon').includePaths;
 var _ = require('lodash');
@@ -16,9 +15,7 @@ var config = {
         });
       },
       ENVIRONMENT: JSON.stringify(nodeEnvironment)
-    }),
-    new ngRequirePlugin([__dirname + './**/*.js']),
-    new webpack.optimize.DedupePlugin()
+    })
   ],
   output: {
     path: __dirname + '/app',
@@ -28,13 +25,6 @@ var config = {
     root: __dirname + '/app'
   },
   jscs: {
-    // By default the loader will try to pick up a `.jscsrc`
-    // file in the root of your project, but you can add any
-    // valid JSCS options here too.
-    //
-    // See: https://github.com/jscs-dev/node-jscs#options
-    validateIndentation: 2,
-
     // JSCS errors are displayed by default as warnings.
     // Set `emitErrors` to `true` to display them as errors.
     emitErrors: false,
@@ -59,12 +49,11 @@ var config = {
   }
 }
 
-console.log('Webpack Env: ', nodeEnvironment);
-
 switch (nodeEnvironment) {
   case 'production':
     config.output.path = __dirname + '/dist';
     config.plugins.push(new webpack.optimize.UglifyJsPlugin());
+    config.plugins.push(new webpack.optimize.DedupePlugin());
     config.plugins.push(new webpack.optimize.OccurenceOrderPlugin());
     config.plugins.push(new webpack.optimize.CommonsChunkPlugin({name: 'vendor', minChunks: Infinity}));
     
@@ -89,7 +78,5 @@ switch (nodeEnvironment) {
   default: 
     console.warn('Unknown or Undefigned Node Environment. Please refer to package.json for available build commands.');
 }
-
-console.log('RUNNING WEBPACK IN ENV: ', nodeEnvironment);
 
 module.exports = config; 
