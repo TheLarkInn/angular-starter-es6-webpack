@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "export NODE_ENV=development && webpack-dev-server --devtool eval --progress --colors --port=9000 --hot --content-base app",
     "test": "export NODE_ENV=test && karma start",
-    "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp app/app.html dist/index.app"
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
   "keywords": [
     "angular",
