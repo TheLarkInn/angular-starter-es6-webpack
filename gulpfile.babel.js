@@ -111,7 +111,7 @@ gulp.task('common_component', () => {
   let scssPath = path.join(resolveToGlobalSCSS(), parentPath, 'index.scss');
 
   let includeAdditionallSCSSFileInGlobalIndex = gulp.src(scssPath)
-    .pipe(inject.append(`\n@import "~components/${name}/${name}.scss";`))
+    .pipe(inject.append(`\n@import "~common/${name}/${name}.scss";`))
     .pipe(clean({force: true}))
     .pipe(gulp.dest(resolveToGlobalSCSS()));    
 
