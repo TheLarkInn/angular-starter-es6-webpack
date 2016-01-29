@@ -1,6 +1,6 @@
 {
   "name": "moo-angular-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An Application Shell for generating Angular Applications for Mutual of Omaha",
   "main": "app.js",
   "scripts": {
