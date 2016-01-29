@@ -4,7 +4,7 @@
   "description": "An Application Shell for generating Angular Applications for Mutual of Omaha",
   "main": "app.js",
   "scripts": {
-    "dev": "export NODE_ENV=development && webpack-dev-server --devtool=eval-cheap-module-source-map --progress --colors --port=9000 --hot --content-base app",
+    "dev": "export NODE_ENV=development && webpack-dev-server --devtool=eval-cheap-module-source-map --progress --colors --port=9000 --content-base app",
     "test": "export NODE_ENV=test && karma start",
     "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
