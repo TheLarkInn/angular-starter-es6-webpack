@@ -7,7 +7,7 @@ let heroComponent = function () {
     scope: {},
     template,
     controller,
-    controllerAs: 'vm',
+    controllerAs: 'heroCtrl',
     bindToController: true
   };
 };

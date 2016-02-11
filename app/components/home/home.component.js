@@ -9,7 +9,7 @@ let homeComponent = function () {
     scope: {},
     template: template,
     controller: controller,
-    controllerAs: 'vm',
+    controllerAs: 'homeCtrl',
     bindToController: true
   };
 };

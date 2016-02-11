@@ -7,7 +7,7 @@ let <%= name %>Component = function () {
     scope: {},
     template,
     controller,
-    controllerAs: 'vm',
+    controllerAs: '<%= name %>Ctrl',
     bindToController: true
   };
 };
