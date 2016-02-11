@@ -43,7 +43,7 @@ var config = {
     loaders: [
       {test: /\.js$/, exclude: /(node_modules)/, loader: 'ng-annotate!babel'},
       {test: /\.html/, exclude: /(node_modules)/, loader: 'html-loader'},
-      { test: /\.s?css$/, loader: 'style!css!sass?includePaths[]=' + bourbon },
+      {test: /\.s?css$/, loader: 'style!css!sass?includePaths[]=' + bourbon },
       {test: /\.(png|jpg)$/, loader: 'url-loader?mimetype=image/png'}
     ]
   }
@@ -64,7 +64,6 @@ switch (nodeEnvironment) {
       vendor: ['angular', 'angular-ui-router', 'lodash']
     }
 
-    config.devtool = 'source-map';
     break;
 
   case 'test':

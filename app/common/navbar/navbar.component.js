@@ -7,7 +7,7 @@ let navbarComponent = function () {
     scope: {},
     template,
     controller,
-    controllerAs: 'vm',
+    controllerAs: 'navBarCtrl',
     bindToController: true
   };
 };

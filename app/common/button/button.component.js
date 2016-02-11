@@ -7,7 +7,7 @@ let buttonComponent = function () {
     scope: {},
     template,
     controller,
-    controllerAs: 'vm',
+    controllerAs: 'buttonCtrl',
     bindToController: true
   };
 };

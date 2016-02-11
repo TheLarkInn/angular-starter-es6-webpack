@@ -1,10 +1,10 @@
 {
-  "name": "moo-angular-starter",
-  "version": "1.0.1",
-  "description": "An Application Shell for generating Angular Applications for Mutual of Omaha",
+  "name": "angular-starter-es6-webpack",
+  "version": "1.0.2",
+  "description": "An Application Shell for generating Angular Applications with Webpack and ES6",
   "main": "app.js",
   "scripts": {
-    "dev": "export NODE_ENV=development && webpack-dev-server --devtool=eval-cheap-module-source-map --progress --colors --port=9000 --content-base app",
+    "dev": "export NODE_ENV=development && webpack-dev-server --devtool=source-map --progress --colors --port=9000 --content-base app",
     "test": "export NODE_ENV=test && karma start",
     "build": "export NODE_ENV=production && node node_modules/.bin/webpack && cp app/index.html dist/index.html"
   },
@@ -42,7 +42,7 @@
     "raw-loader": "^0.5.1",
     "run-sequence": "^1.1.0",
     "url-loader": "^0.5.6",
-    "webpack": "^1.12.2",
+    "webpack": "^1.12.13",
     "webpack-dev-server": "^1.12.0",
     "yargs": "^3.9.0"
   },
