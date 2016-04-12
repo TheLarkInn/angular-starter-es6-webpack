@@ -1,6 +1,6 @@
 {
   "name": "angular-starter-es6-webpack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An Application Shell for generating Angular Applications with Webpack and ES6",
   "main": "app.js",
   "scripts": {
