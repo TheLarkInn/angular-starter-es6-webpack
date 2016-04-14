@@ -41,7 +41,7 @@ var config = {
       loader: 'jscs-loader'
     }],
     loaders: [
-      {test: /\.js$/, exclude: /(node_modules)/, loader: 'ng-annotate!babel'},
+      {test: /\.js$/, exclude: /(node_modules)/, loader: 'babel',  query: {stage: 1} },
       {test: /\.html/, exclude: /(node_modules)/, loader: 'html-loader'},
       {test: /\.s?css$/, loader: 'style!css!sass?includePaths[]=' + bourbon },
       {test: /\.(png|jpg)$/, loader: 'url-loader?mimetype=image/png'}
