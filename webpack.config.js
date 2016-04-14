@@ -63,7 +63,7 @@ switch (nodeEnvironment) {
       bundle: './index.js',
       vendor: ['angular', 'angular-ui-router', 'lodash']
     }
-
+    config.devtool = 'source-map';
     break;
 
   case 'test':
@@ -72,6 +72,7 @@ switch (nodeEnvironment) {
 
   case 'development':
     config.entry = ['./index.js', 'webpack/hot/dev-server'];
+    config.devtool = 'source-map';
     break;
     
   default: 
